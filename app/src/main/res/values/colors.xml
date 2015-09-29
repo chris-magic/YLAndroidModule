@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFF</color>
+
+    <!-- 标题白色 -->
+    <color name="title_white">#F0EFEE</color>
+    <!--  标题背景色，浅灰    -->
+
+    <color name="red">#ff3600</color>
+    <!--  内容背景色，浅灰    -->
+    <color name="content_background">#EAEAEA</color>
+
+
+    <!-- 字体颜色-->
+    <color name="black">#292929</color>
+    <color name="order_green">#90c31f</color>
+    <color name="order_yellow">#f3aa00</color>
+    <color name="order_red">#119c0e</color>
+
+
+
+    <color name="greycolor">#aaa</color>
+
+
+    <!-- 线条颜色 -->
+    <color name="gray">#d8d8d8</color>
+</resources>

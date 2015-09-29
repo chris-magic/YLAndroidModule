@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/content_background"
+    android:orientation="vertical" >
+
+    <!-- 用户登录界面 -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/title_background" >
+
+        <TextView
+            android:id="@+id/message_name"
+            style="@style/textWStyle20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/user_login_title" />
+
+        <RelativeLayout
+            android:id="@+id/btn_back"
+            android:layout_width="60dip"
+            android:layout_height="50dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dip"
+                android:layout_marginStart="16dip"
+                android:contentDescription="@string/back_button"
+                android:src="@drawable/btn_left" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginStart="20dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/textBStyle18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_login_name_label" />
+
+            <EditText
+                android:id="@+id/login_username"
+                style="@style/textBStyle18"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginStart="25dip"
+                android:layout_marginLeft="25dip"
+                android:background="@null"
+                android:gravity="start|center"
+                android:hint="@string/user_login_input_phone_hint"
+                android:inputType="phone"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <!-- 分割线 -->
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginBottom="2dp"
+            android:layout_marginStart="10dip"
+            android:layout_marginLeft="10dip"
+            android:background="@color/gray" />
+
+        <!-- 密码 -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_marginStart="20dip"
+            android:layout_marginLeft="20dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/textBStyle18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_login_pwd_label" />
+
+            <EditText
+                android:id="@+id/login_password"
+                style="@style/textBStyle18"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginStart="25dip"
+                android:layout_marginLeft="25dip"
+                android:background="@null"
+                android:gravity="start|center"
+                android:hint="@string/user_login_input_pwd_hint"
+                android:inputType="textPassword"
+                android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:gravity="center_horizontal" >
+
+        <CheckBox
+            android:id="@+id/save_password"
+            style="@style/textBStyle18"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dip"
+            android:layout_marginLeft="20dip"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableLeft="@drawable/checkbox_click"
+            android:drawableStart="@drawable/checkbox_click"
+            android:paddingLeft="5dip"
+            android:singleLine="true"
+            android:text="@string/user_login_checkbox_remember_pwd" />
+
+        <CheckBox
+            android:id="@+id/automatic_login"
+            style="@style/textBStyle18"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableLeft="@drawable/checkbox_click"
+            android:drawableStart="@drawable/checkbox_click"
+            android:paddingLeft="5dip"
+            android:singleLine="true"
+            android:text="@string/user_login_checkbox_login_auto" />
+
+        <Button
+            android:id="@+id/forget_password"
+            style="@style/textGreenStyle18"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginStart="10dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginEnd="20dip"
+            android:layout_weight="1"
+            android:background="@null"
+            android:singleLine="true"
+            android:text="@string/user_login_checkbox_forget_pwd" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dip"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_login"
+            style="@style/textWXStyle20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dip"
+            android:layout_marginRight="25dip"
+            android:background="@drawable/button_background"
+            android:text="@string/user_login_button_login_now" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dip" >
+
+        <Button
+            android:id="@+id/quick_register"
+            style="@style/textGreenStyle20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="20dip"
+            android:layout_marginEnd="20dip"
+            android:background="@null"
+            android:text="@string/user_login_button_register_fast" />
+    </RelativeLayout>
+
+</LinearLayout>

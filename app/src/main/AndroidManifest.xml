@@ -16,6 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- 用户登录页面-->
+        <activity
+            android:name="com.ledong.login.LoginActivity" >
+        </activity>
+
     </application>
 
 </manifest>

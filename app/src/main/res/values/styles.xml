@@ -1,8 +1,337 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
     </style>
 
+    <!-- 设置界面图标字体样式/灰黑12 -->
+    <style name="textGStyle12">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/greycolor</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 底部菜单字体样式/灰白14 -->
+    <style name="textGStyle14">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/greycolor</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 底部菜单字体样式/灰白15 -->
+    <style name="textGStyle15">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/greycolor</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 底部菜单样式 -->
+    <style name="main_tab_bottom">
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <!-- 字体大小样式/红15 -->
+    <style name="textHStyle15">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 字体大小样式/红17 -->
+    <style name="textHStyle17">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 字体大小样式/红20 -->
+    <style name="textHStyle20">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 字体大小样式/白12 -->
+    <style name="textWStyle12">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/title_white</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 订单字体大小样式/白15 -->
+    <style name="textWStyle15">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/title_white</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 抬头字体大小样式/白17 -->
+    <style name="textWStyle17">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">@color/title_white</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 抬头字体大小样式/白20加粗 -->
+    <style name="textWStyle20">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 按键字体细/白20 -->
+    <style name="textWXStyle20">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">@color/title_white</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 抬头字体大小样式/白18加粗 -->
+    <style name="textWStyle18">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 字体大小样式/黑12 -->
+    <style name="textBStyle12">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 字体大小样式/黑15 -->
+    <style name="textBStyle15">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 字体大小样式/黑17 -->
+    <style name="textBStyle17">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 字体大小样式/黑17 加粗 -->
+    <style name="textBBStyle17">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 字体大小样式/黑18 -->
+    <style name="textBStyle18">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 字体大小样式/黑20 -->
+    <style name="textBStyle20">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 购气历史字体大小样式/黑25加粗 -->
+    <style name="textBBStyle25">
+        <item name="android:textSize">25.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 字体大小样式/黑25 -->
+    <style name="textBStyle25">
+        <item name="android:textSize">25.0sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 字体大小样式/黑30 加粗 -->
+    <style name="textBStyle30">
+        <item name="android:textSize">30.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 字体大小样式/黄14 -->
+    <style name="textYellowStyle14">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/order_yellow</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 字体大小样式/黄15 -->
+    <style name="textYellowStyle15">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/order_yellow</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 字体大小样式/黄17 -->
+    <style name="textYellowStyle17">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">@color/order_yellow</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 字体大小样式/黄18 -->
+    <style name="textYellowStyle18">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/order_yellow</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 字体大小样式/黄20 -->
+    <style name="textYellowStyle20">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">@color/order_yellow</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 字体大小样式/绿15 -->
+    <style name="textGreenStyle15">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/order_green</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 字体大小样式/绿17 -->
+    <style name="textGreenStyle17">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">@color/order_green</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 字体大小样式/绿18 -->
+    <style name="textGreenStyle18">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/order_green</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 字体大小样式/绿20 -->
+    <style name="textGreenStyle20">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">@color/order_green</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 字体大小样式/浅灰17 -->
+    <style name="textGStyle17">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">@color/greycolor</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 字体大小样式/浅灰20 -->
+    <style name="textGStyle20">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">@color/greycolor</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 字体大小样式/浅灰18 -->
+    <style name="textGStyle18">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/greycolor</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 订单查询头部tab样式 -->
+    <style name="order_tab_top">
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <!-- 弹出框样式 -->
+    <style name="dialog_default" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <!-- 加载数据样式 -->
+    <style name="dialog_progress" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimAmount">0.7</item>
+    </style>
+    <!-- 无记录样式 -->
+    <style name="NoDataLayoutStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <!-- 自定义添加设备弹出框样式 -->
+    <style name="MyDialogStyleTop" parent="android:Theme.Dialog">
+
+        <!-- <item name="android:windowAnimationStyle">@style/Animtop</item> -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">false</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 模糊 -->
+        <!-- <item name="android:windowFullscreen">true</item> -->
+    </style>
+
+    <!-- CNG充值 ***********Start***************** -->
+    <style name="wrap_all">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="march_all">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="wrap_noall">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="index_bottom_rwtx_tx" parent="@style/wrap_all">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#939493</item>
+    </style>
+
+    <style name="cng_dialog_theme" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 去掉对话框边框 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="chat_text_name_style">
+        <item name="android:textColor">#818181</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="chat_content_date_style">
+        <item name="android:minHeight">50dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">#bfbfbf</item>
+    </style>
+    <style name="MyDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+     <!-- **************ENd************ -->
+    
 </resources>
+

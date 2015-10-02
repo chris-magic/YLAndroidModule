@@ -1,16 +1,29 @@
 package ly.ledong.com.ylandroidmodule;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+import com.ledong.login.LoginActivity;
+
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+
+    /**
+     * 用户登录activity 跳转
+     */
+    Button btnUserLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        btnUserLogin = (Button)findViewById(R.id.user_login);
+        btnUserLogin.setOnClickListener(this);
     }
 
     @Override
@@ -33,5 +46,18 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.user_login: // 用户登录
+                Intent intentUserLogin = new Intent(this , LoginActivity.class);
+                startActivity(intentUserLogin);
+                break;
+            default:
+                break;
+        }
+
     }
 }

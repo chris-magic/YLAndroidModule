@@ -6,7 +6,6 @@
 
 
     <!-- 用户登录模块  start  -->
-
     <string name="user_login_title">用户登录</string>
     <string name="back_button">返回按钮</string>
     <string name="user_login_name_label">用户登录</string>
@@ -18,7 +17,15 @@
     <string name="user_login_checkbox_forget_pwd">忘记密码</string>
     <string name="user_login_button_login_now">马上登录</string>
     <string name="user_login_button_register_fast">快速注册</string>
-
+    <string name="title_activity_camera_test">CameraTestActivity</string>
 
     <!-- 用户登录模块  end  -->
+
+
+    <!-- 变量命名约定：模块名_控件类型_控件作用-->
+    <!-- 多媒体模块  start  -->
+    <string name="multimedia_button_system_take_photo">调用系统相机拍照</string>
+    <string name="multimedia_button_system_take_camera">调用系统相机录像</string>
+
+    <!-- 多媒体模块  end  -->
 </resources>

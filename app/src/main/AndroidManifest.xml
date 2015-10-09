@@ -17,11 +17,13 @@
             </intent-filter>
         </activity>
 
-        <!-- 用户登录页面-->
-        <activity
-            android:name="com.ledong.login.LoginActivity" >
+        <!-- 用户登录页面 -->
+        <activity android:name="com.ledong.login.LoginActivity" >
         </activity>
-
+        <activity
+            android:name="com.ledong.multimedia.camera.system.CameraTestActivity"
+            android:label="@string/title_activity_camera_test" >
+        </activity>
     </application>
 
 </manifest>
